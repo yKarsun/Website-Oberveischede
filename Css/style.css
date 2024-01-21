@@ -9,14 +9,14 @@ body {
 
 nav {
     height: 55px;
-    display: flex;
+    display: flex;font-family: 'Calibri', sans-serif;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(42, 42, 42);
     color: white;
     position: relative;
     z-index: 2;
-    font-family: 'Calibri', sans-serif;
+    
 }
 
 nav ul {
@@ -70,7 +70,7 @@ nav ul li:hover ul {
     color: rgb(0, 0, 0);
     font-size: 44px;
     z-index: 1;
-    font-family: 'Bevan', serif;
+    font-family: 'Calibri', sans-serif;
 }
 
 .additional-text {
@@ -81,7 +81,7 @@ nav ul li:hover ul {
     color: rgb(0, 60, 255);
     font-size: 15px;
     z-index: 1;
-    font-family: 'Bevan', serif;
+    font-family: 'Calibri', sans-serif;
 }
 .news-box {
     width: 70%;
@@ -90,20 +90,21 @@ nav ul li:hover ul {
     background-color: rgb(25, 26, 28);
     color: white;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.news-box img p {
+.news-box img {
     max-width: 100%;
     height: auto;
 }
 
 .news-box p {
     margin-top: 20px;
+    font-size: 25px;
 }
 .custom-hr {
     border-color: blue;
