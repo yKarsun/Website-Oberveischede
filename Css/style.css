@@ -7,13 +7,16 @@ body {
     font-family: 'Calibri', sans-serif;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 nav {
     height: 55px;
     display: flex;font-family: 'Calibri', sans-serif;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(42, 42, 42);
-    color: white;
     position: relative;
     z-index: 2;
     
@@ -37,6 +40,11 @@ nav ul li a {
     text-decoration: none;
     font-size: 22px;
     font-family: sans-serif;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgba(0, 102, 255);
 }
 
 nav ul li ul {
@@ -104,7 +112,7 @@ nav ul li:hover ul {
 
 .news-box p {
     margin-top: 20px;
-    font-size: 25px;
+    font-size: 20px;
 }
 .custom-hr {
     border-color: blue;
@@ -141,10 +149,20 @@ a {
 }
 
 .footer {
-    width: 100%;
     background-color: rgb(20, 20, 32);
     padding: 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     color: white;
 }
+
+.post p{
+    font-size: 25px;
+    text-align: center;
+}
+
+.preis p{
+    font-size: 30px;
+    text-align: center;
+}
+
