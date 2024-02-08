@@ -113,6 +113,7 @@ nav ul li:hover ul {
 .news-box p {
     margin-top: 20px;
     font-size: 20px;
+    font-family: 'Calibri', sans-serif;
 }
 .custom-hr {
     border-color: blue;
@@ -166,3 +167,9 @@ a {
     text-align: center;
 }
 
+.news-box h2 {
+    margin-top: 20px;
+    font-size: 26px;
+    font-family: 'Calibri', sans-serif;
+    text-align: center;
+}
