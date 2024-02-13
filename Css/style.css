@@ -18,8 +18,7 @@ nav {
     align-items: center;
     background-color: rgb(42, 42, 42);
     position: relative;
-    z-index: 2;
-    
+    z-index: 2;  
 }
 
 nav ul {
@@ -70,11 +69,12 @@ nav ul li:hover ul {
     height: 700px;
 }
 
+
 .image-overlay-text {
     position: absolute;
     top: 55%;
     left: 60%;
-    transform: translate(-170%, -100%);
+    transform: translate(-180%, -100%);
     color: rgb(0, 0, 0);
     font-size: 44px;
     z-index: 1;
@@ -172,4 +172,79 @@ a {
     font-size: 26px;
     font-family: 'Calibri', sans-serif;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul li a {
+        display: none; 
+    }
+    nav {
+        height: 55px;
+        display: flex;font-family: 'Calibri', sans-serif;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(42, 42, 42);
+        padding-right: 50px;
+        z-index: 2;  
+    }
+    
+    nav ul {
+        display: none;
+
+    }
+    
+    nav ul li {
+        display: none;
+    }
+    .facebook img {
+        display: none;
+    }
+    
+    .instagram img {
+        display: none;
+    }
+    .Logo {
+        position: absolute;
+        z-index: 11;
+        transform: translate(-20%, 10%);
+    }
+    
+    
+    .image-overlay-text {
+        position: absolute;
+        top: 25%;
+        left: 100%;
+        color: rgb(0, 0, 0);
+        font-size: 34px;
+        z-index: 1;
+        font-family: 'Calibri', sans-serif;
+    }
+    .image-container img {
+        width: auto;
+        height: 400px;
+    }
+
+    .menu-icon {
+        position: relative;
+        top: 10px;
+        left: 40%;
+        width: 0px;
+        height: 20px;
+        cursor: pointer;
+    }
+    .small-box {
+        width: 50%;
+        margin: 20px auto;
+        background-color: rgb(255, 255, 255);
+        padding: 6px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        color: #ffffff;
+        position: relative;
+    }
+    .post p{
+        font-size: 20px;
+        text-align: center;
+    }
 }
