@@ -14,21 +14,20 @@
 <body>
     <header>
         <div class="Logo">
-            <a href="index.html"><img src="/Pictures/SPVG Banner.png">
+            <a href="index.html"><img src="/Pictures/SPVG Banner.png"></a>
         </div>
         <nav>
-            <div class="nav_logo">
+            <div class="nav_logo"></div>
+            <div class="facebook img">
+                <a href="https://www.facebook.com/people/SG-L%C3%BCtringhausen-Oberveischede/100083393889731/" target="_blank">
+                    <img src="/Pictures/Facebook.png">
+                </a>
             </div>
-        <div class="facebook img">
-            <a href="https://www.facebook.com/people/SG-L%C3%BCtringhausen-Oberveischede/100083393889731/" target="_blank">
-            <img src="/Pictures/Facebook.png">
-        </a>
-        </div>
-        <a href="https://www.instagram.com/sg_luetringhausenoberveischede/" target="_blank">
-        <div class="instagram">
-            <img src="/Pictures/Instagram.png">
-            </a>           
-        </div>
+            <a href="https://www.instagram.com/sg_luetringhausenoberveischede/" target="_blank">
+                <div class="instagram">
+                    <img src="/Pictures/Instagram.png">
+                </div>
+            </a>
             <div class="list-container">
                 <ul>
                     <li><a href="">Aktuelles</a></li>
@@ -68,10 +67,14 @@
                     </li>
                 <li><a href="/Rest/Kontakt.html">Kontakt</a>
                     </li>
-                </ul>      
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>    
             </div>
         </nav>
-        
     </header>
     
     <div class="image-container">
@@ -100,5 +103,11 @@
             <a href="/Rest/Kontakt.html"><b>Kontakt</b></a>
         </div>
     </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('fixed-nav', window.scrollY > 100);
+        });
+    </script>
 </body>
 </html>

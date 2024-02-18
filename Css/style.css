@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     background-image: url('/Pictures/1465799267.jpg');
@@ -13,11 +14,13 @@ img {
 }
 nav {
     height: 55px;
-    display: flex;font-family: 'Calibri', sans-serif;
+    display: flex;
+    font-family: 'Calibri', sans-serif;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(42, 42, 42);
     position: relative;
+    transition: top 0.3s ease;
     z-index: 2;  
 }
 
@@ -59,7 +62,6 @@ nav ul li ul {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-
 nav ul li:hover ul {
     display: block;
 }
@@ -68,7 +70,6 @@ nav ul li:hover ul {
     width: 100%;
     height: 700px;
 }
-
 
 .image-overlay-text {
     position: absolute;
@@ -91,6 +92,7 @@ nav ul li:hover ul {
     z-index: 1;
     font-family: 'Calibri', sans-serif;
 }
+
 .news-box {
     width: 70%;
     max-width: 7000px;
@@ -115,6 +117,7 @@ nav ul li:hover ul {
     font-size: 20px;
     font-family: 'Calibri', sans-serif;
 }
+
 .custom-hr {
     border-color: blue;
     width: 880px;
@@ -135,18 +138,18 @@ nav ul li:hover ul {
 .facebook img {
     width: 100%;
     height: 40px;
-    transform: translateX(2170%);
+    transform: translateX(2100%);
 }
 
 .instagram img {
     width: 100%;
     height: 40px;
-    transform: translateX(1130%);
+    transform: translateX(1330%);
 }
 
 a {
     color: rgb(0, 119, 255);
-    text-decoration: none;
+   
 }
 
 .footer {
@@ -173,7 +176,30 @@ a {
     font-family: 'Calibri', sans-serif;
     text-align: center;
 }
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+display: block;
+width: 25px;
+height: 3px;
+margin: 5px auto;
+-webkit-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+background-color: white;
+}
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
 
+.scroll-start {
+    top: -0px;
+}
 @media screen and (max-width: 400px) {
     nav ul li a {
         display: none; 
@@ -237,6 +263,19 @@ a {
         font-size: 20px;
         text-align: center;
     }
+    .hamburger{
+    display: block;    
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
 }
 @media screen and (max-width: 1366px) {
     nav {
