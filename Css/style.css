@@ -5,12 +5,35 @@ body {
     background-position: center;
     background-attachment: fixed;
     font-family: 'Calibri', sans-serif;
+    background-color: rgb(25, 26, 28);
 }
 img {
     max-width: 100%;
     height: auto;
 }
-
+.navbar-fixed {
+    display: block;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+.insta {
+    position: absolute;
+    display: block;
+    z-index: 12;
+    max-width: 67px;
+    right: 10px;
+    transform: translate(5%, 14%);
+}
+.face {
+    position: absolute;
+    display: block;
+    z-index: 12;
+    max-width: 67px;
+    right: 70px;
+    transform: translate(5%, 14%);
+} 
 .navbar-text {
     font-size: 22px;
     font-family: 'Calibri', sans-serif;
@@ -48,7 +71,7 @@ img {
     font-family: 'Calibri', sans-serif;
 }
 .custom-navbar {
-    background-color: rgb(25, 26, 28);
+    background-color: rgb(37, 38, 41);
 }
 
 .additional-text {
@@ -77,7 +100,7 @@ img {
 }
 
 .news-box img {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
 }
 
@@ -119,15 +142,15 @@ img {
 
 a {
     color: rgb(0, 119, 255);
-   
 }
 
 .footer {
     background-color: rgb(20, 20, 32);
-    padding: 30px;
+    padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     color: white;
+    display: block;
 }
 
 .post p{
@@ -166,16 +189,26 @@ background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
+.testa {
+    display: none;
+}
 
 @media screen and (max-width: 900px) {
+    .testa {
+        display: block;
+        transform: translate(0%, -0%);
+    }
     .logo-container {
-        display: block; 
+        display: block;
       }
       .custom-navbar {
         font-size: 15px;
     }
     .facebook img {
         display: none;
+    }
+    .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+        font-size: 14px;
     }
     
     .instagram img {
@@ -186,7 +219,7 @@ background-color: white;
     }
     
     .image-container img {
-        height: 600px;
+        display: none;
     }
 
     .menu-icon {
@@ -198,7 +231,7 @@ background-color: white;
         cursor: pointer;
     }
     .small-box {
-        width: 50%;
+        width: 60%;
         margin: 20px auto;
         background-color: rgb(255, 255, 255);
         padding: 6px;
@@ -265,7 +298,7 @@ background-color: white;
         font-size: 20px;
     }
     .news-box h3{
-        font-size: 17px;
+        font-size: 12px;
     }
     .news-box h4{
         font-size: 15px;
@@ -281,21 +314,27 @@ background-color: white;
     margin-bottom: 36px;
     font-weight: bold;
   }
+  .insta {
+    display: none;
+  }
+  .face {
+    display: none;
+  } 
+  .post-text h1 {
+    font-size: 18px;
+  }
+  .post-text p {
+    font-size: 18px;
+  }
 
 }
 @media screen and (max-width: 1366px) {
-    .facebook img {
-        display: none;
-    }
-    
-    .instagram img {
-        display: none;
-    }
+
        
-    .image-overlay-text h2{
-        top: 33335%;
-        left: 44440%;
-        transform: translate(40%, -0%);
+    .image-overlay-text {
+        top: 0%;
+        left: 0%;
+        transform: translate(40%, 610%);
         color: rgb(0, 0, 0);
         font-size: 44px;
         z-index: 1;
@@ -311,5 +350,20 @@ background-color: white;
         border-color: blue;
         width: 80%;
     }
-    
+    .insta {
+        display: none;
+      }
+      .face {
+        display: none;
+      } 
 }
+@media screen and (max-width: 700px) {
+    .post-text h1{
+        font-size: 13px;
+    }
+    .post-text p{
+        font-size: 16px;
+    }
+
+}
+
