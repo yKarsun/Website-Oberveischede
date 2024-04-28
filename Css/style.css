@@ -1,12 +1,13 @@
 body {
     margin: 0;
-    background-image: url('/Pictures/1465799267.jpg');
+    background-image: url('/Pictures/grass-84622_1920.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     font-family: 'Calibri', sans-serif;
     background-color: rgb(25, 26, 28);
 }
+
 img {
     max-width: 100%;
     height: auto;
@@ -100,7 +101,7 @@ img {
 }
 
 .news-box img {
-    max-width: 60%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -145,13 +146,17 @@ a {
 }
 
 .footer {
-    background-color: rgb(20, 20, 32);
+    position: static;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(16, 16, 17, 0.863);
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     color: white;
-    display: block;
 }
+
+
 
 .post p{
     font-size: 25px;
@@ -192,6 +197,52 @@ background-color: white;
 .testa {
     display: none;
 }
+.Jahreshauptversammlung {
+    max-width: 900px;
+    height: auto;
+}
+.Impressum h4{
+    font-size: 18px;
+  }
+  .news-box1 {
+    width: 70%;
+    max-width: 7000px;
+    margin: 20px auto;
+    background-color: rgb(25, 26, 28);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.fussball {
+    width: 100%;
+    height: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.news-box2 {
+    width: 90%;
+    max-width: 7000px;
+    margin: 20px auto;
+    background-color: rgb(25, 26, 28);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.news-box br {
+    display: block;
+    margin-bottom: 10px; 
+ }
+
 
 @media screen and (max-width: 900px) {
     .testa {
@@ -326,6 +377,20 @@ background-color: white;
   .post-text p {
     font-size: 18px;
   }
+  br {
+    display: block;
+    content: "";
+    margin-bottom: -3px;
+  }
+ .news-box iframe {
+    width: 100%;
+    height: auto;
+ }
+ .news-box br {
+    display: block;
+    margin-bottom: 6px; 
+ }
+
 
 }
 @media screen and (max-width: 1366px) {
@@ -355,7 +420,7 @@ background-color: white;
       }
       .face {
         display: none;
-      } 
+      }
 }
 @media screen and (max-width: 700px) {
     .post-text h1{
@@ -364,6 +429,53 @@ background-color: white;
     .post-text p{
         font-size: 16px;
     }
-
+    br {
+        display: block;
+        content: "";
+        margin-bottom: -1px;
+      }
+      .Impressum h4{
+        font-size: 13px;
+      }
+      .news-box iframe {
+        width: 100;
+        height: auto;
+     }
+     .news-box1 {
+        width: 90%;
+        max-width: 7000px;
+        margin: 20px auto;
+        background-color: rgb(25, 26, 28);
+        color: white;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        align-items: center;
+    }
+    .news-box1 h1{
+        font-size: 25px;
+    }
+    .fussball {
+        width: 100%;
+        height: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .news-box2 {
+        width: 100%;
+        max-width: 7000px;
+        margin: 20px auto;
+        background-color: rgb(25, 26, 28);
+        color: white;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
+
 
