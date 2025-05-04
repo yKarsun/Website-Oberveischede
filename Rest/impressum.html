@@ -18,95 +18,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <header>
-    <div class="Logo">
-        <a href="/index.html"><img src="/Pictures/SPVG Banner.png"></a>
-    </div>
-    <div class="insta">
-        <a href="https://www.instagram.com/sg_luetringhausenoberveischede/"><img src="/Pictures/Instagram.png"></a>
-    </div>
-    <div class="face">
-        <a href="https://www.facebook.com/people/SG-L%C3%BCtringhausen-Oberveischede/100083393889731/"><img src="/Pictures/Facebook.png"></a>
-    </div>
-    <div class="navbar-fixed">
-    <span class="navbar-text">
-        <nav class="navbar navbar-expand-lg custom-navbar custom-navbar" data-bs-theme="dark">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="logo-container">
-           <a href="/index.html"><img src="/Pictures/SPVG Banner white.png" alt="Logo" width="240" height="14"></a>
-          </div>
-          <div class="collapse navbar-collapse custom-navbar" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/index.html">Aktuelles</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Herren
-                </a>
-            <ul class="dropdown-menu">
-                <span class="navbar-text">
-                <li><a class="dropdown-item" href="/Herren/1. Mannschaft SG Lütringhausen- oberveischede.html">1. Mannschaft SG Lütringhausen- Oberveischede</a></li>
-                <li><a class="dropdown-item" href="/Herren/2. Mannschaft SG Lütringhausen- oberveischede.html">2. Mannschaft SG Lütringhausen- Oberveischede</a></li>
-                <li><a class="dropdown-item"  href="/Herren/Altliga SG Lütringhausen- Oberveischede.html">Altliga SG Lütringhausen- Oberveischede</a></li>     
-                </ul>          
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Frauen
-            </a>
-        <ul class="dropdown-menu">
-            <span class="navbar-text">
-            <li><a class="dropdown-item" href="/Frauen/Frauenmannschaft SG Lütringhausen- Oberveischede.html">Frauenmannschaft SG Lütringhausen- Oberveischede</a></li>    
-            </ul>          
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Junioren
-        </a>
-        <ul class="dropdown-menu">
-            <span class="navbar-text">
-                <li><a class="dropdown-item" href="/Junioren/A-Junioren JSG RILO.html">A-Junioren JSG RILO</a></li>
-                <li><a class="dropdown-item" href="/Junioren/B-Junioren JSG RILO.html">B1-Junioren JSG RILO</a></li>
-                <li><a class="dropdown-item" href="/Junioren/B2-Junioren JSG RILO.html">B2-unioren JSG RILO</a></li>
-                <li><a class="dropdown-item" href="/Junioren/C1-Junioren JSG RLO.html">C1-Junioren JSG RILO</a></li>
-                <li><a class="dropdown-item" href="/Junioren/C2-Junioren JSG RILO.html">C2-Junioren JSG RILO</a></li>
-                <li><a class="dropdown-item" href="/Junioren/D1-Junioren JSG RILO.html">D1-Junioren JSG RILO</a></li>
-                <li><a class="dropdown-item" href="/Junioren/D1-Junioren JSG RILO.html">D2-Junioren JSG RILO</a></li>
-        </ul>
-    </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Verein
-    </a>
-            <ul class="dropdown-menu">
-                <span class="navbar-text">
-                <li><a class="dropdown-item" href="/Rest/Vorstand.html">Vorstand</a></li>     
-                </ul>          
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Clubhaus
-                </a>
-            <ul class="dropdown-menu">
-                <span class="navbar-text">
-                <li><a class="dropdown-item" href="/Rest/Vermietung.html">Vermietung</a></li>  
-                </ul>          
-            </li>
-              <li class="nav-item">
-                <a class="nav-link"href="/Rest/Termine.html">Termine</a>
-                    </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/Rest/Kontakt.html">Kontakt</a>
-                    </li>
-            </div>
-            </span>
-        </div>
-    </div>
-      </nav>
-    </header>
+    <div id="header"></div>
+        <script>
+            fetch('/header.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('header').innerHTML = data);
+        </script>
+        </header>
     <div class="news-box">
         <h1>Impressum</h1>
         <h2>Herausgeber:</h2>

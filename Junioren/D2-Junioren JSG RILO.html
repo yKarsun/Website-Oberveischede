@@ -18,113 +18,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <header>
-    <div class="Logo">
-        <a href="/index.html"><img src="/Pictures/SPVG Banner.png"></a>
-    </div>
-    <div class="insta">
-        <a href="https://www.instagram.com/sg_luetringhausenoberveischede/"><img src="/Pictures/Instagram.png"></a>
-    </div>
-    <div class="face">
-        <a href="https://www.facebook.com/people/SG-L%C3%BCtringhausen-Oberveischede/100083393889731/"><img src="/Pictures/Facebook.png"></a>
-    </div>
-    <div class="navbar-fixed">
-    <span class="navbar-text">
-        <nav class="navbar navbar-expand-lg custom-navbar custom-navbar" data-bs-theme="dark">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="logo-container">
-           <a href="/index.html"><img src="/Pictures/SPVG Banner white.png" alt="Logo" width="240" height="14"></a>
-          </div>
-          <div class="collapse navbar-collapse custom-navbar" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/index.html">Aktuelles</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Herren
-                </a>
-            <ul class="dropdown-menu">
-                <span class="navbar-text">
-                <li><a class="dropdown-item" href="/Herren/1. Mannschaft SG Lütringhausen- oberveischede.html">1. Mannschaft SG Lütringhausen- Oberveischede</a></li>
-                <li><a class="dropdown-item" href="/Herren/2. Mannschaft SG Lütringhausen- oberveischede.html">2. Mannschaft SG Lütringhausen- Oberveischede</a></li>
-                <li><a class="dropdown-item"  href="/Herren/Altliga SG Lütringhausen- Oberveischede.html">Altliga SG Lütringhausen- Oberveischede</a></li>     
-                </ul>          
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Frauen
-            </a>
-        <ul class="dropdown-menu">
-            <span class="navbar-text">
-            <li><a class="dropdown-item" href="/Frauen/Frauenmannschaft SG Lütringhausen- Oberveischede.html">Frauenmannschaft SG Lütringhausen- Oberveischede</a></li>    
-            </ul>          
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Junioren
-        </a>
-        <ul class="dropdown-menu">
-            <span class="navbar-text">
-                <li><a class="dropdown-item" href="/Junioren/A-Junioren JSG RILO.html">A-Junioren JSG RILO</a></li>
-                <li><a class="dropdown-item" href="/Junioren/B-Junioren JSG RILO.html">B1-Junioren JSG RILO</a></li>
-                <li><a class="dropdown-item" href="/Junioren/B2-Junioren JSG RILO.html">B2-unioren JSG RILO</a></li>
-                <li><a class="dropdown-item" href="/Junioren/C1-Junioren JSG RLO.html">C1-Junioren JSG RILO</a></li>
-                <li><a class="dropdown-item" href="/Junioren/C2-Junioren JSG RILO.html">C2-Junioren JSG RILO</a></li>
-                <li><a class="dropdown-item" href="/Junioren/D1-Junioren JSG RILO.html">D1-Junioren JSG RILO</a></li>
-                <li><a class="dropdown-item" href="/Junioren/D1-Junioren JSG RILO.html">D2-Junioren JSG RILO</a></li>
-        </ul>
-    </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Verein
-    </a>
-            <ul class="dropdown-menu">
-                <span class="navbar-text">
-                <li><a class="dropdown-item" href="/Rest/Vorstand.html">Vorstand</a></li>     
-                </ul>          
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Clubhaus
-                </a>
-            <ul class="dropdown-menu">
-                <span class="navbar-text">
-                <li><a class="dropdown-item" href="/Rest/Vermietung.html">Vermietung</a></li>  
-                </ul>          
-            </li>
-              <li class="nav-item">
-                <a class="nav-link"href="/Rest/Termine.html">Termine</a>
-                    </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/Rest/Kontakt.html">Kontakt</a>
-                    </li>
-            </div>
-            </span>
-        </div>
-    </div>
-      </nav>
-    </div>
-    </header> 
+    <div id="header"></div>
+        <script>
+            fetch('/header.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('header').innerHTML = data);
+        </script>
+        </header> 
     <div class="news-box">
-        <h1>E-Jugend</h1>
-        <h3>Unsere E-Jugend spielt in der Saison 2023/24 in der E-Junioren Kreisliga A unter der JSG Lütringhausen/Oberveischede.</h3><br>
+        <h1>D2-Jugend</h1>
+        <h3>Die D2-Jugend spielt mit in der Saison 2024/2025 in der D2-Junioren Liga A.</h3><br>
 
             <h2>Trainingszeiten:<br></h2>
-            <h2>E-Jugend</h2>
+            <h2>D2-Jugend</h2>
             <h2>Sowohl das Training (zweimal die Woche | Dienstags und Donnerstags), als auch die Saison-/Pokal- und Freundschaftsspiele werden auf den Sportplätzen in Lütringhausen und Oberveischede ausgetragen.</h2>
             <hr class="custom-hr">
-            <h2>Du würdest gerne bei uns Fußballspielen und suchst noch den richtigen Ansprechpartner?</h2>
-            <h2>Dann kontaktiere gerne direkt das Trainerteam (Andreas Weber Mobil: 01608056284) oder fülle einfach unser Kontaktformular aus.</h2>
+            <h1>Trainer: Christian Stahl: 0176 20605004   <br><br> Moritz Marschner: 0170 6585053</h1>
             <hr class="custom-hr">
 </div>
 <div class="news-box2">
     <h1>Ergebnisdienst</h1>
     <h3>Hier finden Sie alle Ergebnisse der einzelnen Wettbewerbe.</h3>
     <div class="fussball"> 
-        <iframe src="https://www.fussball.de/spieltagsuebersicht/e-junioren-kreisliga-a-2-kreis-olpe-e-junioren-kreisliga-a-e-junioren-saison2324-westfalen/-/staffel/02MERSV4C8000007VS5489B4VV49I0K2-G#!/"width="90%" height="600px" frameborder="0"></iframe>
+        <iframe src="http://www.fussball.de/mannschaft/-/team-id/02034PUS2C000000VS548984VSUCHKOE/tab/schedule/season-id/Aktuell/"width="90%" height="600px" frameborder="0"></iframe>
     </div>
 </div>
     <footer>
