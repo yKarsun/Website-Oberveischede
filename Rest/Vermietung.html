@@ -1,56 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>OV Sport</title>
-    <link rel="stylesheet" type="text/css" href="/Css/style.css">
-    <link rel="icon" href="/Pictures/Logo_spvg_365x365.png" type="imgage/x-icon">
+    <title>Vermietung – OV Sport</title>
+    <link rel="stylesheet" type="text/css" href="../Css/style.css">
+    <link rel="icon" href="../Pictures/Logo_spvg_365x365.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Calibri:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<header>
-    <div id="header"></div>
+<body>
+    <div class="wrapper">
+        <div id="header"></div>
         <script>
-            fetch('/header.html')
+            fetch('../header.html')
                 .then(response => response.text())
                 .then(data => document.getElementById('header').innerHTML = data);
         </script>
-        </header>
-    <div class="news-box">
+
+        <div class="news-box">
             <h1>Clubhausvermietung</h1>
-            <h4>wir vom Sportverein bieten auch dieses Jahr wieder Vermietungen für private Feiern in unserem Clubhaus an.</h4><br>
+            <h4>Wir vom Sportverein bieten auch dieses Jahr wieder Vermietungen für private Feiern in unserem Clubhaus an.</h4><br>
             <h2>Was bieten wir?</h2><br>
             <h4>Einen Gastraum für max. 80 Personen inklusive Toilettennutzung und Küche.<br><br>
-                (Sitzplätze für ca. 24 Personen) <br> Parkmöglichkeiten direkt vorm Clubhaus. Zubuchbare Extras wie eine Soundanlage, Bierzeltgarnituren als weitere Sitzmöglichkeit  sowie ein Stromanschluss für einen Kühlwagen</h4>
-                <h1>Kosten:<h1><br>
-                    <h4>Die Mietkosten betragen 125,- € / Tag für Mitglieder. <br>
-                        175,- € / Tag für Nichtmitglieder<br>
-                        Zusätzliche Nutzung der Heimkabine/Gästekabine 10,- € / Tag<br>
-                        Nutzung der Soundanlage 55,- € / Tag<br>
-                        Bierzeltgarnituren: 10,- € / Tag<br>
-                        Bereitstellung Strom für Kühlwagen 20,- € / Tag<br>
-                        Die Kaution beträgt 150,- € (Clubhaus), 50,- € (Soundanlage)</h4>
-                        <h4>Da wir über das Jahr noch Trainingseinheiten und Spieltrieb haben, ist zuvor eine Terminanfrage notwendig.<br><br>
-                            Bei Vermietung an unter 25 Jährige muss ein Erziehungsberechtigter bei der Veranstaltung anwesend sein<br>   <br>                    
-                            Bei Interesse melden Sie sich gerne bei:<br>
-                            Martin Liszka,  Mobil: 0176-32680589<br></h4>
-
-            <img src="/Pictures/b432ab39beb583c434b722756caff2eb28f33175.jpg">
-    </div>
-    <footer>
-        <div class="footer">
-            <a href="/Rest/impressum.html"><b>impressum</b></a><br>
-            <a href="/Rest/Kontakt.html"><b>Kontakt</b></a>
+                (Sitzplätze für ca. 24 Personen)<br>
+                Parkmöglichkeiten direkt vorm Clubhaus.<br>
+                Zubuchbare Extras wie eine Soundanlage, Bierzeltgarnituren als weitere Sitzmöglichkeit sowie ein Stromanschluss für einen Kühlwagen.</h4>
+            <h1>Kosten:</h1><br>
+            <h4>Die Mietkosten betragen 125,- € / Tag für Mitglieder.<br>
+                175,- € / Tag für Nichtmitglieder<br>
+                Zusätzliche Nutzung der Heimkabine/Gästekabine 10,- € / Tag<br>
+                Nutzung der Soundanlage 55,- € / Tag<br>
+                Bierzeltgarnituren: 10,- € / Tag<br>
+                Bereitstellung Strom für Kühlwagen 20,- € / Tag<br>
+                Die Kaution beträgt 150,- € (Clubhaus), 50,- € (Soundanlage)</h4>
+            <h4>Da wir über das Jahr noch Trainingseinheiten und Spielbetrieb haben, ist zuvor eine Terminanfrage notwendig.<br><br>
+                Bei Vermietung an unter 25-Jährige muss ein Erziehungsberechtigter bei der Veranstaltung anwesend sein.<br><br>
+                Bei Interesse melden Sie sich gerne bei:<br>
+                Martin Liszka, Mobil: 0176-32680589</h4>
+            <img src="../Pictures/b432ab39beb583c434b722756caff2eb28f33175.jpg" alt="Clubhaus">
         </div>
-    </footer> 
+
+        <footer>
+            <div class="footer">
+                <a href="impressum.html"><b>Impressum</b></a><br>
+                <a href="Kontakt.html"><b>Kontakt</b></a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
