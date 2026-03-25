@@ -1,20 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>OV Sport</title>
-    <link rel="stylesheet" type="text/css" href="/Css/style.css">
-    <link rel="icon" href="/Pictures/Logo_spvg_365x365.png" type="imgage/x-icon">
+    <title>SpVg Blau-Weiß Oberveischede</title>
+    <link rel="stylesheet" type="text/css" href="Css/style.css">
+    <link rel="icon" href="Pictures/Logo_spvg_365x365.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Calibri:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
@@ -22,32 +18,81 @@
         <!-- Header -->
         <div id="header"></div>
         <script>
-            fetch('/header.html')
+            fetch('header.html')
                 .then(response => response.text())
                 .then(data => document.getElementById('header').innerHTML = data);
         </script>
 
         <!-- Hauptinhalt -->
         <div class="content">
+
+            <!-- Hero Bild -->
             <div class="image-container">
-                <img src="/Pictures/Oberveischede-2.jpg" alt="Bild">
+                <img src="Pictures/Oberveischede-2.jpg" alt="Sportanlage Oberveischede">
                 <div class="image-overlay-text">
                     <h1>Willkommen am Kapellchen</h1>
                 </div>
             </div>
+
+            <!-- Bildergalerie Oberveischede -->
+            <div class="gallery-section">
+                <img src="Pictures/Oberveischede-1.jpg" alt="Oberveischede">
+                <img src="Pictures/grass-2616911_1920.jpg" alt="Fußballplatz">
+                <img src="Pictures/football-2778583_1920.jpg" alt="Fußball">
+                <img src="Pictures/josiah-day-oxgb4fGNmMM-unsplash.jpg" alt="Fußballspiel">
+                <img src="Pictures/pexels-pixmike-413195.jpg" alt="Sport">
+                <img src="Pictures/the-ball-488709_1920.jpg" alt="Fußball am Platz">
+            </div>
+
+            <!-- Unsere Mannschaften -->
+            <div class="teams-section">
+                <h2>Unsere Mannschaften</h2>
+                <div class="teams-grid">
+                    <a class="team-card" href="Herren/1. Mannschaft SG Lütringhausen- oberveischede.html">
+                        <h3>1. Herrenmannschaft</h3>
+                    </a>
+                    <a class="team-card" href="Herren/2. Mannschaft SG Lütringhausen- oberveischede.html">
+                        <h3>2. Herrenmannschaft</h3>
+                    </a>
+                    <a class="team-card" href="Herren/Altliga SG Lütringhausen- Oberveischede.html">
+                        <h3>Altliga</h3>
+                    </a>
+                    <a class="team-card" href="Frauen/Frauenmannschaft SG Lütringhausen- Oberveischede.html">
+                        <h3>Frauenmannschaft</h3>
+                    </a>
+                    <a class="team-card" href="Junioren/A-Junioren JSG RILO.html">
+                        <h3>A-Junioren</h3>
+                    </a>
+                    <a class="team-card" href="Junioren/B-Junioren JSG RILO.html">
+                        <h3>B1-Junioren</h3>
+                    </a>
+                    <a class="team-card" href="Junioren/C1-Junioren JSG RLO.html">
+                        <h3>C1-Junioren</h3>
+                    </a>
+                    <a class="team-card" href="Junioren/D1-Junioren JSG RILO.html">
+                        <h3>D1-Junioren</h3>
+                    </a>
+                    <a class="team-card" href="Junioren/D2-Junioren JSG RILO.html">
+                        <h3>D2-Junioren</h3>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Aktuelle Nachrichten -->
             <div class="post-text">
                 <div class="news-box1">
                     <h1>Aktuelle Nachrichten</h1>
                     <iframe src="https://crossiety.app/embed/14641/group?notice=off" width="100%" height="600px" frameborder="0"></iframe>
                 </div>
             </div>
+
         </div>
 
         <!-- Footer -->
         <footer>
             <div class="footer">
-                <a href="/Rest/impressum.html"><b>Impressum</b></a><br>
-                <a href="/Rest/Kontakt.html"><b>Kontakt</b></a>
+                <a href="Rest/impressum.html"><b>Impressum</b></a><br>
+                <a href="Rest/Kontakt.html"><b>Kontakt</b></a>
             </div>
         </footer>
     </div>
